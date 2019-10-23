@@ -26,7 +26,9 @@
                     <h2> a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-lg-2">
-                    <a class="btn btn-info btn-lg mt-4" href="#reserveForm">Reserve Campsite</a>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip"
+                        data-placement="bottom" data-html="true"
+                        title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -116,18 +118,18 @@
                                 <div class="row">
                                     <div class="col">
                                         <div>
-                                        <label class="col-sm-6" for="nuCampers">Number of Campers</label>
+                                            <label class="col-sm-6" for="nuCampers">Number of Campers</label>
                                         </div>
                                         <div class="col">
-                                        <select class="col form-control" name="nuCampers" id="nuCampers">
-                                            <option value="" hidden>Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="5">6</option>
-                                        </select>
+                                            <select class="col form-control" name="nuCampers" id="nuCampers">
+                                                <option value="" hidden>Select...</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="5">6</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +137,8 @@
                                     <div class="col">
                                         <label class="col-sm-6" for="date">Date</label>
                                         <div class="col">
-                                        <input placeholder="Date" class="form-control" type="date" id="date" name="date">
+                                            <input placeholder="Date" class="form-control" type="date" id="date"
+                                                name="date">
                                         </div>
                                     </div>
                                 </div>
@@ -188,6 +191,11 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 
 </body>
 
