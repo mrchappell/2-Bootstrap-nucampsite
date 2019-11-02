@@ -38,3 +38,8 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.modal-header {
+  background-color: #901CAD;
+  color: white;
+}
